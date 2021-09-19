@@ -1,5 +1,6 @@
 module.exports = {
   name: "load_slash",
+  cd: 1000*10,
   run:async(msg,args,client)=>{
     const guild = await msg.guild.commands.fetch()
     //if (!client.owners.has?.(msg.author.id)||client.owners!==msg.author.id||mgs.author.id!=="764727536507813898") return msg.reply(`only the owner can run this cmd`)

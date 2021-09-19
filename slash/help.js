@@ -4,7 +4,7 @@ module.exports = {
     description: "View the Bots Commands and News!!"
   },
   run:async(client,i)=>{
-    const hbed = new discord.MessageEmbed()
+    const hbed = new client.discord.MessageEmbed()
     .setColor("#cff5c4")
     .setDescription("hi")
 

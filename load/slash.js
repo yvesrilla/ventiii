@@ -10,4 +10,4 @@ for (const file of slashFiles) {
   const cmd = require(`../slash/${file}`)
   client.slash.set(cmd.data.name,cmd)
 }
-console.log(`All slash commands are loaded!`)
+console.log(`Loaded ${client.slash.size} slash command files in \`client.slash\`!`)

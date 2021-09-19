@@ -1,25 +1,21 @@
 const client = require(`./class/client.js`)
 const activity = "/h for help! | ventibot.com"
 
-
 client.on("ready",async ()=>{
   console.clear()
+  console.log(`Logged in as ${client.user.tag}!`)
   await client.application.fetch()
-  client.owners = ['717422301192126485', '764727536507813898']
+  client.owners = client.application.owner?.members //['717422301192126485', '764727536507813898']
+  client.discord = require(`discord.js`) 
+  client.user.setPresence({
+    status: "idle",
+    activities: [{
+      name: activity,
+      type: "PLAYING"
+    }]
+  })
   require(`./load/events.js`)
   require(`./load/slash.js`)
   require(`./load/cmd.js`)
-  console.log(`Logged in as ${client.user.tag}`)
-  client.user.setActivity(activity)
-  console.log(`loaded ${client.user.tag}'s activity to ${activity}`)
-  console.log(`owners are ${client.owners}!`)
-
+  require(`./load/mongoose.js`)
 })
-
-//mongoose setup uwu
-const mongwoose = require('mongoose')
-mongwoose.connect(process.env.GOOSEKEY, {
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-}).then(console.log('connected to mongo uwu!'))
-

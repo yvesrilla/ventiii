@@ -10,4 +10,4 @@ for (const file of cmds) {
   client.cmds.set(cmd.name,cmd)
 }
 
-console.log(`All commands are loaded!`)
+console.log(`Loaded ${client.cmds.size} command files in \`client.cmds\`!`)

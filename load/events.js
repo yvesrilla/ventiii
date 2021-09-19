@@ -29,4 +29,4 @@ client.on("interactionCreate",i=>{
   })
 })
 
-console.log(`All events are loaded!`)
+console.log(`Loaded ${client.events.size} event files in \`client.events\`!`)
