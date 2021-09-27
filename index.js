@@ -8,7 +8,7 @@ client.on("ready",async ()=>{
   client.owners = client.application.owner?.members //['717422301192126485', '764727536507813898']
   client.discord = require(`discord.js`) 
   client.user.setPresence({
-    status: "idle",
+    status: "dnd",
     activities: [{
       name: activity,
       type: "PLAYING"

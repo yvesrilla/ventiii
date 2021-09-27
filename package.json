@@ -1,5 +1,5 @@
 {
-  "name": "venti-1",
+  "name": "venti",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": ["yvesrilla", "slay-epic"],
   "license": "ISC",
   "dependencies": {
     "discord.js": "^13.1.0",

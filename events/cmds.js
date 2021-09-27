@@ -36,7 +36,7 @@ module.exports = {
     try {
       await command.run(msg,args,client)
     } catch(e) {
-      msg.reply(`Error lul`)
+      msg.reply(`error!`)
       console.log(e)
     }
   }
